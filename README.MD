@@ -36,6 +36,9 @@ http://localhost:9000/graphiql
 1. Go to root/test directory, open the shell
 2. run the command 
 ```
+npm install mocha -g
+```
+```
 mocha operationservice.js
 ```
 
