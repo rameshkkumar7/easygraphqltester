@@ -1,0 +1,20 @@
+[{
+    "data": [{
+        "id": 520447,
+        "name": "orderSwapTusass2ToNormalTusass",
+        "serviceId": "169450",
+        "accountId": "21004962",
+        "status": "COMPLETE",
+        "createdDate": "2019-11-04T13:24:39.972",
+        "preferredActionDate": "2019-11-04T00:00",
+        "lastUpdDate": "2019-11-04T13:25:06.042776",
+        "productGroup": "Mobile",
+        "type": "Swap",
+        "origin": "LegacyPO",
+        "author": "Tusass2 User"
+    }],
+    "pageInfo": {
+        "totalPages": 1,
+        "totalElements": 1
+    }
+}]

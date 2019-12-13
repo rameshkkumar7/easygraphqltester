@@ -1,0 +1,51 @@
+enum ProcessStatus {
+  CANCELLED
+  COMPLETE
+  COMPLETE_WITH_FAILURES
+  FAILED
+  NEW
+  PENDING
+  PROCESSING
+  WAITING
+  WAITING_SUBORDER
+}
+
+type Operations {
+   data:[Operation]
+   pageInfo: PageInfo
+}
+
+type Operation {
+   accountId: String
+  author: String
+  createdDate: String
+  customerId: String
+  id: Int!
+  lastUpdDate: String
+  name: String
+  note: String
+  origin: String
+  payload: String
+  preferredActionDate: String
+  productGroup: String
+  serviceId: String
+  status: ProcessStatus
+  type: String
+}
+
+type PageInfo {
+  currentPage: Int!
+  currentSize: Int!
+  firstPage: Int!
+  lastPage: Int!
+  nextPage: Int!
+  pageSize: Int!
+  previousPage: Int!
+  totalElements: Int!
+  totalPages: Int!
+}
+
+
+type Query {
+  operations(operationId: String!, page: Int!, pageSize: Int!): Operations
+}
